@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bg.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+  }
+  nav {
+    width: 100%;
+    height: 80px;
+    background: #000;
+    position: fixed;
+    z-index: 1;
+  }
+  .logo {
+    color: #fff;
+    float: left;
+    margin-left: 40px;
+    line-height: 80px;
+    font-size: 20px;
+  }
+  span {
+    color: #ffc107;
+  }
+  nav ul {
+    float: right;
+    list-style: none;
+  }
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 80px;
+    position: relative;
+  }
+  nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+    border: 0px solid #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.4s;
+  }
+  nav ul li a:hover {
+    color: #000;
+    background-color: #fff;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  label #btn,
+  label #cancel {
+    float: right;
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    margin-right: 40px;
+    display: none;
+  }
+  .title {
+    border: 0px solid #fff;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: center;
+  }
+  .title p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-family: sans-serif;
+    color: #ffc107;
+  }
+  .title-box {
+    font-family: sans-serif;
+    font-size: 60px;
+    line-height: 100px;
+    font-weight: bold;
+    height: 100px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .slider {
+    color: #ffc107;
+    margin-left: 12px;
+    box-sizing: border-box;
+    animation: slider 6s linear infinite;
+  }
+  @keyframes slider {
+    0% {
+      margin-top: -200px;
+    }
+    30% {
+      margin-top: -200px;
+    }
+    35% {
+      margin-top: 0px;
+    }
+    65% {
+      margin-top: 0px;
+    }
+    70% {
+      margin-top: 200px;
+    }
+    100% {
+      margin-top: 200px;
+    }
+  }
+  
+  .content {
+    height: 700px;
+    background-color: #f9f9f9;
+  }
+  .content h1 {
+    border: 0px solid;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .content p {
+    text-align: justify;
+    margin: 20px 40px;
+  }
+  .icon {
+    border: 0px solid;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  .icon img {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+  }
+  
+  .list-portofolio {
+    min-height: 600px;
+    background-color: #000;
+  }
+  .list-portofolio h1 {
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+    border: 0px solid #fff;
+  }
+  .box-image {
+    border: 0px solid #fff;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin: 30px auto;
+  }
+  .box-image img {
+    width: 100%;
+    height: 100px;
+  }
+  .rounded-image {
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+  }
+  
+  .footer {
+    min-height: 250px;
+    background-color: #ff8f17;
+  }
+  .footer h1 {
+    text-align: center;
+    padding: 40px 0;
+    border: 0px solid #fff;
+    color: #fff;
+  }
+  .box-icon {
+    border: 0px solid;
+    height: 100px;
+    text-align: center;
+  }
+  .medsos {
+    border: 0px solid;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100px;
+    margin: 0 auto;
+    display: inline-block;
+    color: #fff;
+  }
+  .icon-medsos a {
+    font-size: 40px;
+    color: #fff;
+  }
+  .box-icon h3 {
+    margin: 10px 0;
+  }
+  
+  .bottom {
+    color: #fff;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+  }
+  
+  /* Tampilan Responsive Dinamis*/
+  @media (max-width: 1118px) {
+    .logo {
+      margin-left: 25px;
+    }
+    .box-image {
+      width: 80px;
+      height: 80px;
+      margin: 30px auto;
+    }
+    .box-image img {
+      width: 100%;
+      height: 80px;
+    }
+    .content p {
+      margin: 8px 40px;
+      font-size: 14px;
+    }
+  }
+  
+  /* Tampilan Responsive Tablet */
+  @media (max-width: 944px) {
+    nav ul li a {
+      font-size: 16px;
+    }
+    .title-box {
+      font-size: 50px;
+    }
+  }
+  
+  /* Tampilan Responsive Mobile*/
+  @media (max-width: 768px) {
+    .logo {
+      margin-left: 40px;
+      font-size: 18px;
+    }
+    label #btn {
+      display: block;
+    }
+    nav ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      margin-right: 0;
+      top: 80px;
+      right: -100%;
+      text-align: center;
+      transition: 0.6s;
+      z-index: 2;
+    }
+    nav ul li {
+      display: block;
+      line-height: 40px;
+      margin: 40px 0;
+    }
+    nav ul li a {
+      font-weight: bold;
+    }
+    #check:checked ~ nav ul {
+      right: 0;
+    }
+    #check:checked ~ label #btn {
+      display: none;
+    }
+    #check:checked ~ label #cancel {
+      display: block;
+    }
+    .title-box {
+      font-size: 25px;
+    }
+    .title p {
+      margin: 0 auto;
+      line-height: 20px;
+      font-family: sans-serif;
+      font-size: 12px;
+    }
+    .icon {
+      padding: 30px 0;
+    }
+    .content p {
+      margin: 5px 40px;
+      font-size: 12px;
+    }
+    .box-image {
+      width: 80px;
+      height: 80px;
+      margin: 30px auto;
+    }
+    .box-image img {
+      width: 100%;
+      height: 80px;
+    }
+    .box-icon h3 {
+      font-size: 14px;
+    }
+  }
+  
+  /* Tampilan Responsive Mobile L*/
+  @media (max-width: 450px) {
+    .box-icon h3 {
+      font-size: 12px;
+    }
+    .icon {
+      padding: 20px 0;
+    }
+  }
+  
+  /* Tampilan Responsive Mobile M*/
+  @media (max-width: 330px) {
+    .logo {
+      margin-left: 20px;
+      font-size: 14px;
+    }
+    label #btn,
+    label #cancel {
+      margin-right: 20px;
+    }
+    .title-box {
+      font-size: 20px;
+    }
+    .title p {
+      margin: 0 auto;
+      line-height: 5px;
+      font-family: sans-serif;
+      font-size: 10px;
+    }
+    .content p {
+      font-size: 10px;
+    }
+    .box-icon h3 {
+      font-size: 10px;
+    }
+  }
